@@ -1,6 +1,7 @@
 package ru.otpechatok.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import ru.otpechatok.data.businessCard.BusinessCard;
 import ru.otpechatok.data.businessCard.BusinessCardSize;
@@ -22,6 +23,18 @@ public class BusinessCardService implements iProductService<BusinessCard> {
     public List<BusinessCard> findAll() {
         return businessCardRepository.findAll();
     }
+
+    @Override
+    public List<BusinessCard> findAllOrderByFieldASC(String fieldName) {
+        return businessCardRepository.findAll(Sort.by(Sort.Direction.ASC, fieldName));
+    }
+
+
+    @Override
+    public List<BusinessCard> findAllOrderByFieldDESC(String fieldName) {
+        return businessCardRepository.findAll(Sort.by(Sort.Direction.DESC, fieldName));
+    }
+
 
     public BusinessCard add(BusinessCard businessCard){
         BusinessCard businessCardFromDb = businessCardRepository.save(businessCard);

@@ -20,5 +20,21 @@ public interface iProductService<T extends  Product> {
     List<T> findAll();
 
 
+    /**
+     * сортировка по полю по возрастанию
+     * @param fieldName поле по которому будет выполнена сортировка
+     * @return отсортированный список
+     */
+    List<T> findAllOrderByFieldASC(String fieldName);
+
+
+    /**
+     * сортировка по полю по убыванию
+     * @param fieldName поле по которому будет выполнена сортировка
+     * @return отсортированный список
+     */
+    List<T> findAllOrderByFieldDESC(String fieldName);
+
+
 
 }

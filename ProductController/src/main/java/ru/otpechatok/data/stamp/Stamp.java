@@ -43,4 +43,6 @@ public class Stamp extends Product {
     public Stamp getInstance() {
         return this;
     }
+
+
 }

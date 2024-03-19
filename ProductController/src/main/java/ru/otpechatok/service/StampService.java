@@ -1,7 +1,9 @@
 package ru.otpechatok.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
+import ru.otpechatok.data.businessCard.BusinessCard;
 import ru.otpechatok.data.stamp.Stamp;
 import ru.otpechatok.data.stamp.StampBodyType;
 import ru.otpechatok.data.stamp.StampSize;
@@ -22,6 +24,17 @@ public class StampService implements iProductService<Stamp> {
     @Override
     public List<Stamp> findAll() {
         return stampRepository.findAll();
+    }
+
+
+    @Override
+    public List<Stamp> findAllOrderByFieldASC(String fieldName) {
+        return stampRepository.findAll(Sort.by(Sort.Direction.ASC, fieldName));
+    }
+
+    @Override
+    public List<Stamp> findAllOrderByFieldDESC(String fieldName) {
+        return stampRepository.findAll(Sort.by(Sort.Direction.DESC, fieldName));
     }
 
     @Override
