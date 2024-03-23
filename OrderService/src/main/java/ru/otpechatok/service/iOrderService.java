@@ -2,6 +2,7 @@ package ru.otpechatok.service;
 
 import ru.otpechatok.data.Order;
 import ru.otpechatok.data.OrderDetails;
+import ru.otpechatok.dto.OrderDetailsDTO;
 
 import java.util.List;
 
@@ -20,7 +21,7 @@ public interface iOrderService {
      * @param userId id пользователя сделавшего заказ
      * @return заказ из после сохранения с присвоенными id
      */
-    Order createOrder(List<OrderDetails> orderDetails, Long userId);
+    Order createOrder(List<OrderDetailsDTO> orderDetails, Long userId);
 
 
     /**
