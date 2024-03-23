@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86672fa1-0b01-4163-a3c2-d92c63aae0a3" name="Changes" comment="start orderService">
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/dto/OrderDetailsDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/repository/OrderDetailsRepository.java" afterDir="false" />
+    <list default="true" id="86672fa1-0b01-4163-a3c2-d92c63aae0a3" name="Changes" comment="orderService v0.1">
+      <change afterPath="$PROJECT_DIR$/ApiGateAway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateAway/src/main/java/ru/otpechatok/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiGateAway/src/main/resources/applicaton.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/OrderDetailJSONParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/OrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/OrderDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/service/OderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/service/OderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/service/iOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/service/iOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +69,23 @@
       <recent name="D:\Программирование\GB\java\Диплом\Project\Otpechatok\ProductController" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.otpechatok.Main" />
       <module name="OrderService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.otpechatok.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.otpechatok.Main" />
+      <module name="ApiGateAway" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.otpechatok.*" />
@@ -98,6 +110,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Docker.Otpechatok_ProductServiceDB" />
@@ -105,8 +118,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710962776100</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="orderService v0.1">
+      <created>1711194639912</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711194639912</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,7 +187,8 @@
     <MESSAGE value="add ProductService Db" />
     <MESSAGE value="add getMappingAndSorting" />
     <MESSAGE value="start orderService" />
-    <option name="LAST_COMMIT_MESSAGE" value="start orderService" />
+    <MESSAGE value="orderService v0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="orderService v0.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
