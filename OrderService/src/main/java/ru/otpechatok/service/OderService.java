@@ -16,15 +16,18 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * сервис обрабатывающий заказы
+ */
 @Service
 @RequiredArgsConstructor
-public class OderService implements iOrderService{
-    private  final OrderRepository orderRepository;
-    private  final OrderDetailsRepository orderDetailsRepository;
+public class OderService implements iOrderService {
+    private final OrderRepository orderRepository;
+    private final OrderDetailsRepository orderDetailsRepository;
+
     @Override
     public List<Order> findAllOrdersByUserId(Long userId) {
-
-        return  orderRepository.findAllByUserId(userId);
+        return orderRepository.findAllByUserId(userId);
     }
 
 
@@ -33,7 +36,7 @@ public class OderService implements iOrderService{
         Order orderToSave = new Order();
         orderToSave.setUserId(userId);
         orderToSave.setTimeOfCreation(LocalDateTime.now());
-        BigDecimal price= new BigDecimal(0);
+        BigDecimal price = new BigDecimal(0);
         for (OrderDetailsDTO orderDetailsDTO : orderDetailsDTOS) {
             BigDecimal sumPrice = BigDecimal.valueOf(orderDetailsDTO.getPriceForOne())
                     .multiply(BigDecimal.valueOf(orderDetailsDTO.getAmount()));
@@ -46,8 +49,8 @@ public class OderService implements iOrderService{
 
         Order finalOrderToSave = orderToSave;
         List<OrderDetails> orderDetails = orderDetailsDTOS.stream()
-                .map(x->{
-                    OrderDetails result  = OrderDetails.convertFromOrderDetailsDTO(x);
+                .map(x -> {
+                    OrderDetails result = OrderDetails.convertFromOrderDetailsDTO(x);
                     result.setOrder(finalOrderToSave);
                     return result;
                 })
@@ -57,9 +60,10 @@ public class OderService implements iOrderService{
         return finalOrderToSave;
     }
 
+
     @Override
     public void cancelOrderById(Long orderId) {
-        Order orderFromDB =  orderRepository.findById(orderId).get();
+        Order orderFromDB = orderRepository.findById(orderId).get();
         orderFromDB.setStatus(Status.CANCELED);
         orderRepository.save(orderFromDB);
     }

@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ProductServiceRun" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="ru.otpechatok.Main" />
+    <module name="ProductService" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

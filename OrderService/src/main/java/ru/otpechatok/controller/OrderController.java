@@ -15,10 +15,12 @@ import java.util.List;
 @RequestMapping("order")
 @RequiredArgsConstructor
 public class OrderController {
-    private  final iOrderService orderService;
+    private final iOrderService orderService;
+
 
     /**
      * получить все заказы пользователя
+     *
      * @param id id пользователя
      * @return список заказов
      */
@@ -31,16 +33,21 @@ public class OrderController {
 
     /**
      * создать новый заказ
+     *
      * @param orderDetailsDTOS детали заказа
-     * @param id id пользователя
+     * @param id               id пользователя
      * @return ответ об успешном создании заказа
      */
     @PostMapping("create")
-    public ResponseEntity<Void>  createOrder(@RequestBody List<OrderDetailsDTO> orderDetailsDTOS, @RequestParam Long id) {
+    public ResponseEntity<Void> createOrder(@RequestBody List<OrderDetailsDTO> orderDetailsDTOS, @RequestParam Long id) {
         orderService.createOrder(orderDetailsDTOS, id);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
+    /**
+     * отмена заказа (изменить статус заказа на CANCELED)
+     * @param orderId id отмененного заказа
+     */
     @PostMapping("cancel/{orderId}")
     public void cancelOrderById(@PathVariable Long orderId) {
         orderService.cancelOrderById(orderId);

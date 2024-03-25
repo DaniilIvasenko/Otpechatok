@@ -7,6 +7,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * сущность размера визитки
+ */
 @Entity
 @Table(name = "BusinessCardSize")
 @NoArgsConstructor
@@ -19,7 +22,13 @@ public class BusinessCardSize{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
+    /**
+     * размер
+     */
     private String size;
+    /**
+     * ссылка на id визитки
+     */
     @ManyToOne
     @JoinColumn(name = "business_card_id")
     private BusinessCard businessCard;

@@ -8,6 +8,9 @@ import ru.otpechatok.data.ProductType;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * сервис распределяющий запросы по сервисам соответствующим типу продукта полученному на вход.
+ */
 @Service
 @RequiredArgsConstructor
 public class ProductService {
@@ -16,9 +19,10 @@ public class ProductService {
 
     /**
      * найти все продукты всех типов в БД
+     *
      * @return список продуктов
      */
-    public List<Product> findAllProducts(){
+    public List<Product> findAllProducts() {
         List<Product> products = new ArrayList<>();
         products.addAll(stampService.findAll());
         products.addAll(businessCardService.findAll());
@@ -28,21 +32,24 @@ public class ProductService {
 
     /**
      * найти все продукты в БД определенного типа
+     *
      * @param productType тип продукта для поиска
      * @return список продуктов из БД
      */
-    public List<Product> findAllByProductType(ProductType productType){
+    public List<Product> findAllByProductType(ProductType productType) {
         iProductService service = getServiceByProductType(productType);
-        return  service.findAll();
+        return service.findAll();
     }
+
 
     /**
      * поиск и сортировка продуктов определенного типа по возрастанию
+     *
      * @param productType тип продукта
-     * @param field поле для сортировки
+     * @param field       поле для сортировки
      * @return список продуктов
      */
-    public List<Product> findAllByTypeAndOrderByFieldASC(ProductType productType, String field){
+    public List<Product> findAllByTypeAndOrderByFieldASC(ProductType productType, String field) {
         iProductService service = getServiceByProductType(productType);
         return service.findAllOrderByFieldASC(field);
     }
@@ -50,27 +57,14 @@ public class ProductService {
 
     /**
      * поиск и сортировка продуктов определенного типа по убыванию
+     *
      * @param productType тип продукта
-     * @param field поле для сортировки
+     * @param field       поле для сортировки
      * @return список продуктов
      */
-    public List<Product> findAllByTypeAndOrderByFieldDESC(ProductType productType, String field){
+    public List<Product> findAllByTypeAndOrderByFieldDESC(ProductType productType, String field) {
         iProductService service = getServiceByProductType(productType);
         return service.findAllOrderByFieldDESC(field);
-    }
-
-
-    /**
-     * сохранение продукта в БД
-     * @param product Продукт для сохранения
-     * @return экземпляр продукта из БД с присвоенными ID
-     */
-    public Product add(Product product) {
-        iProductService service = getServiceByProductType(product.getProductType());
-        if (service==null){
-            throw new RuntimeException("Невозможно подобрать сервис для указанного продукта");
-        }
-        return service.add(product.getInstance());
     }
 
 
@@ -91,5 +85,4 @@ public class ProductService {
         }
         return null;
     }
-
 }

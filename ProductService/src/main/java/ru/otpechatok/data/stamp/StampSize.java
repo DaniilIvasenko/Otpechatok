@@ -7,6 +7,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * размер для конкретно печати
+ */
 @Entity
 @Table(name = "stamp_sizes")
 @NoArgsConstructor
@@ -19,7 +22,13 @@ public class StampSize {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    /**
+     * размер
+     */
     private String size;
+    /**
+     * ссылка на печать
+     */
     @ManyToOne
     @JoinColumn(name = "stamp_id")
     private  Stamp stamp;

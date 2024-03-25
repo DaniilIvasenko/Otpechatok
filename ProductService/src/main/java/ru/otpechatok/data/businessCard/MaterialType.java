@@ -7,6 +7,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * сущность материала для конкретного вида визитки
+ */
 @Entity
 @Table(name = "MaterialType")
 @NoArgsConstructor
@@ -19,7 +22,13 @@ public class MaterialType{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
+    /**
+     * тип материала
+     */
     private String materialType;
+    /**
+     * ссылка на визитку
+     */
     @ManyToOne
     @JoinColumn(name = "business_card_id")
     private BusinessCard businessCard;

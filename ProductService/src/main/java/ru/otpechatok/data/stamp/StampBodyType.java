@@ -7,6 +7,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * тип корпуса конкретной печати
+ */
 @Entity
 @Table(name = "stamp_body_type")
 @NoArgsConstructor
@@ -19,7 +22,13 @@ public class StampBodyType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    /**
+     * название типа корпуса
+     */
     private String bodyType;
+    /**
+     * ссылка на печать
+     */
     @ManyToOne
     @JoinColumn(name = "stamp_id")
     private Stamp stamp;

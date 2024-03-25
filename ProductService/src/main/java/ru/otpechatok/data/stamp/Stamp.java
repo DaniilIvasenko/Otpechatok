@@ -12,6 +12,9 @@ import ru.otpechatok.data.ProductType;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * сущность печати
+ */
 @Entity
 @Table(name = "stamp")
 @Getter
@@ -20,12 +23,15 @@ import java.util.List;
         generator = ObjectIdGenerators.PropertyGenerator.class,
         property = "id")
 public class Stamp extends Product {
+    /** размеры доступные для этой печати */
     @OneToMany(mappedBy = "stamp")
     @JsonManagedReference
     private List<StampSize> sizes;
 
+    /** типы корпуса */
     @OneToMany(mappedBy = "stamp")
     List<StampBodyType> bodyTypes;
+
 
     public Stamp(BigDecimal price, String description, String imageFileName, List<StampSize> sizes, List<StampBodyType> bodyTypes) {
         super( price, description, imageFileName);
@@ -37,6 +43,7 @@ public class Stamp extends Product {
     public Stamp() {
         super.setProductType(ProductType.STAMP);
     }
+
 
     @Override
     public Stamp getInstance() {

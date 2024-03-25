@@ -12,23 +12,23 @@ import java.util.Arrays;
 @Converter(autoApply = true)
 public class ProductTypeConverter implements AttributeConverter<ProductType, String> {
 
-        @Override
-        public String convertToDatabaseColumn(ProductType attribute) {
-            if (attribute == null) {
-                return null;
-            }
-            return attribute.getProductType();
+    @Override
+    public String convertToDatabaseColumn(ProductType attribute) {
+        if (attribute == null) {
+            return null;
         }
+        return attribute.getProductType();
+    }
 
 
-        @Override
-        public ProductType convertToEntityAttribute(String dbData) {
-            if (dbData == null) {
-                return null;
-            }
-            return Arrays.stream(ProductType.values())
-                    .filter(x -> x.getProductType().equals(dbData))
-                    .findFirst()
-                    .orElseThrow(IllegalAccessError::new);
+    @Override
+    public ProductType convertToEntityAttribute(String dbData) {
+        if (dbData == null) {
+            return null;
         }
+        return Arrays.stream(ProductType.values())
+                .filter(x -> x.getProductType().equals(dbData))
+                .findFirst()
+                .orElseThrow(IllegalAccessError::new);
+    }
 }

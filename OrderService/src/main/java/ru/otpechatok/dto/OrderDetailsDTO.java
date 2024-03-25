@@ -12,9 +12,24 @@ import java.math.BigDecimal;
  */
 @Data
 public class OrderDetailsDTO {
+    /**
+     * тип продукта
+     */
     private String productType;
-    private  int amount;
-    private  String modelFileName;
-    private  String description;
+    /**
+     * количество единиц
+     */
+    private int amount;
+    /**
+     * путь к файлу модели
+     */
+    private String modelFileName;
+    /**
+     * подробное описание продукта
+     */
+    private String description;
+    /**
+     * цена за единицу
+     */
     private double priceForOne;
 }

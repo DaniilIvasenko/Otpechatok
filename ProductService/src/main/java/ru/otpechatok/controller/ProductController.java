@@ -16,12 +16,25 @@ import java.util.List;
 public class ProductController {
     private final ProductService productService;
 
+
+    /**
+     * получить список всех продуктов
+     * @return ответ со списком продуктов
+     */
     @GetMapping()
     ResponseEntity<List<Product>> getAllProducts() {
         ResponseEntity<List<Product>> response = new ResponseEntity<>(productService.findAllProducts(), HttpStatus.OK);
         return response;
     }
 
+
+    /**
+     * получить список продукции определенного типа с возможностью сортировки
+     * @param productType требуемый тип продукта
+     * @param sortField
+     * @param sortType
+     * @return
+     */
     @GetMapping("/{productType}")
     ResponseEntity<List<Product>> findAllProductsByTypeAndSort(
             @PathVariable ProductType productType,
@@ -44,11 +57,5 @@ public class ProductController {
         }
         response = new ResponseEntity<>(products, HttpStatus.OK);
         return response;
-    }
-
-
-    @PostMapping("add")
-    public void addProduct(@RequestBody Product product) {
-        productService.add(product);
     }
 }

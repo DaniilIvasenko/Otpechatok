@@ -12,6 +12,9 @@ import ru.otpechatok.data.ProductType;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * сущность визитки
+ */
 @Entity
 @Table(name = "business_card")
 @Getter
@@ -20,9 +23,15 @@ import java.util.List;
         generator = ObjectIdGenerators.PropertyGenerator.class,
         property = "id")
 public class BusinessCard extends Product {
+    /**
+     * список размеров доступных для данной визитки
+     */
     @OneToMany(mappedBy = "businessCard")
     @JsonManagedReference
     private  List<BusinessCardSize> sizes;
+    /**
+     * список материалов из которых можно изготавливать визитку
+     */
     @OneToMany(mappedBy = "businessCard")
     private List<MaterialType> materialTypes;
 

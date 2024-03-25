@@ -12,13 +12,15 @@ import ru.otpechatok.repository.stamp.StampSizeRepository;
 
 import java.util.List;
 
+/**
+ * сервис работающий с печатями
+ */
 @Service
 @RequiredArgsConstructor
 public class StampService implements iProductService<Stamp> {
-    private  final StampRepository stampRepository;
-    private  final StampSizeRepository stampSizeRepository;
-    private  final StampBodyTypeRepository stampBodyTypeRepository;
-
+    private final StampRepository stampRepository;
+    private final StampSizeRepository stampSizeRepository;
+    private final StampBodyTypeRepository stampBodyTypeRepository;
 
     @Override
     public List<Stamp> findAll() {
@@ -31,27 +33,27 @@ public class StampService implements iProductService<Stamp> {
         return stampRepository.findAll(Sort.by(Sort.Direction.ASC, fieldName));
     }
 
+
     @Override
     public List<Stamp> findAllOrderByFieldDESC(String fieldName) {
         return stampRepository.findAll(Sort.by(Sort.Direction.DESC, fieldName));
     }
 
+
     @Override
-    public Stamp add(Stamp stamp){
+    public Stamp add(Stamp stamp) {
         Stamp stampFromDb = stampRepository.save(stamp);
         List<StampBodyType> stampBodyTypes = stampFromDb.getBodyTypes();
-        if (stampBodyTypes!=null){
-            stampBodyTypes.stream().forEach(x->x.setStamp(stampFromDb));
+        if (stampBodyTypes != null) {
+            stampBodyTypes.stream().forEach(x -> x.setStamp(stampFromDb));
             stampBodyTypeRepository.saveAll(stampBodyTypes);
         }
 
         List<StampSize> stampSizes = stampFromDb.getSizes();
-        if (stampSizes!=null){
-            stampSizes.stream().forEach(x->x.setStamp(stampFromDb));
+        if (stampSizes != null) {
+            stampSizes.stream().forEach(x -> x.setStamp(stampFromDb));
             stampSizeRepository.saveAll(stampSizes);
         }
         return stampFromDb;
     }
-
-
 }
