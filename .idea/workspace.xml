@@ -4,47 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86672fa1-0b01-4163-a3c2-d92c63aae0a3" name="Changes" comment="add api gate away">
-      <change afterPath="$PROJECT_DIR$/.config/OrderServiceRun.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.config/ProductServiceRun.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.config/ProgrammRun.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/test/java/ru/otpechatok/controller/OrderControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderService/src/test/java/ru/otpechatok/service/OderServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/test/java/ru/otpechatok/service/BusinessCardServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/test/java/ru/otpechatok/service/ProductServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProductService/src/test/java/ru/otpechatok/service/StampServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.config/Otpechatok_ProductServiceDB.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.config/Otpechatok_ProductServiceDB.run.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="86672fa1-0b01-4163-a3c2-d92c63aae0a3" name="Changes" comment="add testing and documentation">
+      <change afterPath="$PROJECT_DIR$/.config/ApiGateWayRun.run.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.config/ProgrammRun.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.config/ProgrammRun.run.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiGateAway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateWay/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiGateAway/src/main/java/ru/otpechatok/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateWay/src/main/java/ru/otpechatok/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiGateAway/src/main/resources/applicaton.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateWay/src/main/resources/applicaton.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/OrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/OrderDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/ProductType.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/ProductType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/converters/DateTimeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/converters/DateTimeConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/converters/ProductTypeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/converters/ProductTypeConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/converters/StatusConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/data/converters/StatusConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/dto/OrderDetailsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/dto/OrderDetailsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/service/OderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/service/OderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/service/iOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/java/ru/otpechatok/service/iOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/ProductDeserializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/ProductType.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/ProductType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/ProductTypeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/ProductTypeConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/businessCard/BusinessCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/businessCard/BusinessCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/businessCard/BusinessCardSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/businessCard/BusinessCardSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/businessCard/MaterialType.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/businessCard/MaterialType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/stamp/Stamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/stamp/Stamp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/stamp/StampBodyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/stamp/StampBodyType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/stamp/StampSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/stamp/StampSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/BusinessCardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/BusinessCardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/StampService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/StampService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/iProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/iProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,14 +76,7 @@
       <recent name="ru.otpechatok.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Compound.ProgrammRun">
-    <configuration name="ApiGateWayRun" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="ru.otpechatok.Main" />
-      <module name="ApiGateWay" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ApiGateWayRun">
     <configuration name="BusinessCardServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProductService" />
       <extension name="coverage">
@@ -273,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711223987787</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add testing and documentation">
+      <created>1711402947792</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711402947792</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,7 +257,8 @@
     <MESSAGE value="start orderService" />
     <MESSAGE value="orderService v0.1" />
     <MESSAGE value="add api gate away" />
-    <option name="LAST_COMMIT_MESSAGE" value="add api gate away" />
+    <MESSAGE value="add testing and documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add testing and documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
