@@ -45,6 +45,7 @@ public class Stamp extends Product {
     }
 
 
+
     @Override
     public Stamp getInstance() {
         return this;

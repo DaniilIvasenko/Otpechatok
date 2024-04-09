@@ -4,11 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86672fa1-0b01-4163-a3c2-d92c63aae0a3" name="Changes" comment="add testing and documentation">
-      <change afterPath="$PROJECT_DIR$/.config/ApiGateWayRun.run.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.config/ProgrammRun.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.config/ProgrammRun.run.xml" afterDir="false" />
+    <list default="true" id="86672fa1-0b01-4163-a3c2-d92c63aae0a3" name="Changes" comment="add readme and configs">
+      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AutorisationServer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AutorisationServer/src/main/java/ru/otpechatok/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AutorisationServer/src/main/java/ru/otpechatok/configurarion/AuthorisationServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AutorisationServer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/controllers/WebController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/data/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/data/ProductType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/data/stamp/BodyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/data/stamp/Stamp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/data/stamp/StampSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/models/ProductApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/resources/static/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/resources/templates/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/dto/BusinessCardDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/dto/StampDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/mappers/BusinessCardToDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/mappers/StampToStampDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/mappers/iProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/exceptions/ProductTypeNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_03_2024_11_28_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_03_2024_11_28__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiGateWay/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ApiGateWay/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/dto/products/BusinessCardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/dto/products/BusinessCardDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/dto/products/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/dto/products/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/dto/products/StampDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/dto/products/StampDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/models/OrderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/models/OrderApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtpechatokWeb/src/main/java/ru/otpechatok/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/ProductType.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/ProductType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/stamp/Stamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/stamp/Stamp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/stamp/StampBodyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/stamp/StampBodyType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/stamp/StampSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/data/stamp/StampSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/BusinessCardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/BusinessCardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/StampService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/StampService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/iProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/main/java/ru/otpechatok/service/iProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProductService/src/test/java/ru/otpechatok/service/BusinessCardServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProductService/src/test/java/ru/otpechatok/service/BusinessCardServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +63,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="package-info" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +99,11 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/Программирование/GB/java/Диплом/Project/Otpechatok/.config"
+    "last_opened_file_path": "D:/Программирование/GB/java/Диплом/Project/Otpechatok",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.1937255",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -75,8 +123,25 @@
       <recent name="ru.otpechatok.service" />
       <recent name="ru.otpechatok.controller" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dto" />
+      <recent name="mappers" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.ApiGateWayRun">
+  <component name="RunManager" selected="Application.ProductServiceRun">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.otpechatok.Main" />
+      <module name="Otpechatok" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.otpechatok.dto.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BusinessCardServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProductService" />
       <extension name="coverage">
@@ -103,22 +168,6 @@
       <option name="PACKAGE_NAME" value="ru.otpechatok.service" />
       <option name="MAIN_CLASS_NAME" value="ru.otpechatok.service.BusinessCardServiceTest" />
       <option name="METHOD_NAME" value="add" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BusinessCardServiceTest.findAllOrderByFieldDESC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProductService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.otpechatok.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.otpechatok.service" />
-      <option name="MAIN_CLASS_NAME" value="ru.otpechatok.service.BusinessCardServiceTest" />
-      <option name="METHOD_NAME" value="findAllOrderByFieldDESC" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,22 +208,22 @@
       <item itemvalue="Application.ProductServiceRun" />
       <item itemvalue="Application.ApiGateWayRun" />
       <item itemvalue="Application.OrderServiceRun" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Compound.ProgrammRun" />
       <item itemvalue="Docker.Otpechatok_ProductServiceDB" />
       <item itemvalue="Docker.Otpechatok_OrderService" />
       <item itemvalue="JUnit.BusinessCardServiceTest" />
       <item itemvalue="JUnit.BusinessCardServiceTest.add" />
-      <item itemvalue="JUnit.BusinessCardServiceTest.findAllOrderByFieldDESC" />
       <item itemvalue="JUnit.ProductServiceTest" />
       <item itemvalue="JUnit.ProductServiceTest.getServiceByProductType" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ProductServiceTest.getServiceByProductType" />
         <item itemvalue="JUnit.ProductServiceTest" />
         <item itemvalue="JUnit.BusinessCardServiceTest" />
         <item itemvalue="JUnit.BusinessCardServiceTest.add" />
-        <item itemvalue="JUnit.BusinessCardServiceTest.findAllOrderByFieldDESC" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711402947792</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add readme and configs">
+      <created>1711404781412</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711404781412</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,7 +314,8 @@
     <MESSAGE value="orderService v0.1" />
     <MESSAGE value="add api gate away" />
     <MESSAGE value="add testing and documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add testing and documentation" />
+    <MESSAGE value="add readme and configs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add readme and configs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

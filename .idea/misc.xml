@@ -10,6 +10,9 @@
         <option value="$PROJECT_DIR$/ProductServ/pom.xml" />
         <option value="$PROJECT_DIR$/ProductService/pom.xml" />
         <option value="$PROJECT_DIR$/ApiGateAway/pom.xml" />
+        <option value="$PROJECT_DIR$/OtpechatokWeb/pom.xml" />
+        <option value="$PROJECT_DIR$/AutorisationServer/pom.xml" />
+        <option value="$PROJECT_DIR$/ApiGateWay/pom.xml" />
       </list>
     </option>
   </component>

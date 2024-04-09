@@ -47,7 +47,7 @@ class BusinessCardServiceTest {
     }
 
     @Test
-    @DisplayName("BusinessCard searching and ASC sorting test")
+    @DisplayName("BusinessCardDTO searching and ASC sorting test")
     void findAllOrderByFieldASC() {
         List<BusinessCard> businessCards = List.of(new BusinessCard(), new BusinessCard());
         given(businessCardRepository.findAll(Sort.by(Sort.Direction.ASC, "price"))).willReturn(businessCards);
@@ -56,7 +56,7 @@ class BusinessCardServiceTest {
     }
 
     @Test
-    @DisplayName("BusinessCard searching and DESC sorting test")
+    @DisplayName("BusinessCardDTO searching and DESC sorting test")
     void findAllOrderByFieldDESC() {
         List<BusinessCard> businessCards = List.of(new BusinessCard(), new BusinessCard());
         given(businessCardRepository.findAll(Sort.by(Sort.Direction.DESC, "price"))).willReturn(businessCards);
@@ -65,7 +65,7 @@ class BusinessCardServiceTest {
     }
 
     @Test
-    @DisplayName("BusinessCard save testing")
+    @DisplayName("BusinessCardDTO save testing")
     void add() {
         BusinessCard businessCard = new BusinessCard();
 

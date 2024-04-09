@@ -1,5 +1,6 @@
 package ru.otpechatok.service;
 
+import dto.ProductDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import ru.otpechatok.data.Product;
@@ -22,8 +23,8 @@ public class ProductService {
      *
      * @return список продуктов
      */
-    public List<Product> findAllProducts() {
-        List<Product> products = new ArrayList<>();
+    public List<ProductDTO> findAllProducts() {
+        List<ProductDTO> products = new ArrayList<>();
         products.addAll(stampService.findAll());
         products.addAll(businessCardService.findAll());
         return products;
@@ -36,7 +37,7 @@ public class ProductService {
      * @param productType тип продукта для поиска
      * @return список продуктов из БД
      */
-    public List<Product> findAllByProductType(ProductType productType) {
+    public List<ProductDTO> findAllByProductType(ProductType productType) {
         iProductService service = getServiceByProductType(productType);
         return service.findAll();
     }
@@ -49,7 +50,7 @@ public class ProductService {
      * @param field       поле для сортировки
      * @return список продуктов
      */
-    public List<Product> findAllByTypeAndOrderByFieldASC(ProductType productType, String field) {
+    public List<ProductDTO> findAllByTypeAndOrderByFieldASC(ProductType productType, String field) {
         iProductService service = getServiceByProductType(productType);
         return service.findAllOrderByFieldASC(field);
     }
@@ -62,7 +63,7 @@ public class ProductService {
      * @param field       поле для сортировки
      * @return список продуктов
      */
-    public List<Product> findAllByTypeAndOrderByFieldDESC(ProductType productType, String field) {
+    public List<ProductDTO> findAllByTypeAndOrderByFieldDESC(ProductType productType, String field) {
         iProductService service = getServiceByProductType(productType);
         return service.findAllOrderByFieldDESC(field);
     }

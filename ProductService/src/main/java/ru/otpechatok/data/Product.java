@@ -45,6 +45,7 @@ public abstract class Product {
     }
 
 
+
     /**
      * получить экземпляр класса наследника
      *

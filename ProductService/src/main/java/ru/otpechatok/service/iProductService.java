@@ -1,5 +1,6 @@
 package ru.otpechatok.service;
 
+import dto.ProductDTO;
 import ru.otpechatok.data.Product;
 
 import java.util.List;
@@ -17,15 +18,16 @@ public interface iProductService<T extends  Product> {
      * получить список всех товаров
      * @return список товаров из БД
      */
-    List<T> findAll();
+    List<ProductDTO> findAll();
 
 
     /**
      * сортировка по полю по возрастанию
+     *
      * @param fieldName поле по которому будет выполнена сортировка
      * @return отсортированный список
      */
-    List<T> findAllOrderByFieldASC(String fieldName);
+    List<ProductDTO> findAllOrderByFieldASC(String fieldName);
 
 
     /**
@@ -33,7 +35,7 @@ public interface iProductService<T extends  Product> {
      * @param fieldName поле по которому будет выполнена сортировка
      * @return отсортированный список
      */
-    List<T> findAllOrderByFieldDESC(String fieldName);
+    List<ProductDTO> findAllOrderByFieldDESC(String fieldName);
 
 
 }
